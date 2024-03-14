@@ -27,7 +27,10 @@ SECRET_KEY = 'django-insecure-nld-x1rv9*zit#o9jq5(_%oiwtw2_in$f#_l&fe!71)p3##2*n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
+X_FRAME_OPTIONS = '*'
+CORS_ORIGIN_ALLOW_ALL = True
+CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:8000/','https://hive-tech-backend.onrender.com']
 
 
 # Application definition
